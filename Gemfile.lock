@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    omniauth-hotmart (0.1.0)
+      omniauth-oauth (~> 1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hashie (3.5.7)
+    minitest (5.11.3)
+    oauth (0.5.4)
+    omniauth (1.8.1)
+      hashie (>= 3.4.6, < 3.6.0)
+      rack (>= 1.6.2, < 3)
+    omniauth-oauth (1.1.0)
+      oauth
+      omniauth (~> 1.0)
+    rack (2.0.5)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  minitest (~> 5.0)
+  omniauth-hotmart!
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.2
