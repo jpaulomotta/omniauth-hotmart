@@ -1,5 +1,4 @@
 require 'omniauth-oauth2'
-require 'omniauth-hotmart/access_token_middleware'
 
 module OmniAuth
   module Strategies
@@ -18,7 +17,7 @@ module OmniAuth
         #Faraday middleware (passed from OAuth2 gem to Faraday)
         :connection_build => Proc.new {|con|
           con.request  :url_encoded             # form-encode POST params
-          con.use AccessTokenMiddleware
+          con.use OmniAuth::Hotmart::AccessTokenMiddleware
           con.adapter Faraday.default_adapter  # make requests with Net::HTTP
         }, 
       }
